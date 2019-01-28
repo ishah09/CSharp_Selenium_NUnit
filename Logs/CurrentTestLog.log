@@ -1,0 +1,8 @@
+﻿2019-01-10 11:39:35,535 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.SetupTestExecution - This is initial call.
+2019-01-10 11:39:35,548 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.BeforeTestExecution - This is call before each test execution.
+2019-01-10 11:39:35,551 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.TestMethod - This is call from TestExecution method-1
+2019-01-10 11:39:35,552 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.AfterTestExecution - This is call from after TestExecution
+2019-01-10 11:39:35,558 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.BeforeTestExecution - This is call before each test execution.
+2019-01-10 11:39:35,558 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.TestMethod2 - This is call from TestExecution method-2
+2019-01-10 11:39:35,558 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.AfterTestExecution - This is call from after TestExecution
+2019-01-10 11:39:35,561 INFO [Worker#STA_NP] NUnitDemo.TestDemo.BasicTestDemo.QuitTestExecution - This is Quit call.

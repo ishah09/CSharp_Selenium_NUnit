@@ -1,0 +1,21 @@
+﻿This is basic stucture, which represents flow for multiple Test suite
+
+
+app.config ---> Config key values
+|
+|
+|		Common Variables ---> To declare common variable
+|			|
+|			|
+|___________|_____ConfigReaderClass ---> Read the key values of configuration
+						|
+						|
+						|_____UtilReader ---> Common Scenario Declaration
+								  |
+								  |
+								  |_____ClassA ---> Test A
+								  |
+								  |
+								  |_____ClassB ---> Test B
+		
+	

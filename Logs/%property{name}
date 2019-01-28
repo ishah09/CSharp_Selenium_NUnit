@@ -1,0 +1,4 @@
+﻿2019-01-10 12:06:57,396 INFO [Worker#STA_NP] NUnitDemo.TestDemo.orderedTest.TestMethod01 - Hello from TestMethod01
+2019-01-10 12:06:57,413 INFO [Worker#STA_NP] NUnitDemo.TestDemo.orderedTest.TestMethod02 - Hello from TestMethod02
+2019-01-10 12:06:57,417 INFO [Worker#STA_NP] NUnitDemo.TestDemo.orderedTest.TestMethod04 - Hello from TestMethod04
+2019-01-10 12:06:57,421 INFO [Worker#STA_NP] NUnitDemo.TestDemo.orderedTest.TestMethod03 - Hello from TestMethod03

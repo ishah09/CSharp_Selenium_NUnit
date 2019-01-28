@@ -1,0 +1,2 @@
+﻿2019-01-10 14:54:26,940 INFO [Worker#STA_NP] NUnitDemo.TestDemo.TestResult.TestResultCheck - TestContext.Message = System.DivideByZeroException : Attempted to divide by zero.
+2019-01-10 14:54:26,953 INFO [Worker#STA_NP] NUnitDemo.TestDemo.TestResult.TestResultCheck - TestContext.StackTrace =    at NUnitDemo.TestDemo.TestResult.TestMethod() in C:\Users\Desktop-pc\source\repos\NUnitDemo\NUnitDemo\TestDemo\TestResult.cs:line 21
