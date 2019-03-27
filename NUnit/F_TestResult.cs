@@ -1,21 +1,28 @@
 ﻿using log4net;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NUnitDemo.TestDemo
 {
     [TestFixture]
     public class TestResult
-    {
+    {        
         private static readonly ILog Log =
            LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         [Test]
-        public void TestMethod()
+        public void TestMethod01()
+        {            
+            Log.Info("This is test method 01");
+        }
+
+        [Test]
+        public void TestMethod02()
+        {            
+            Log.Info("This is test method 02");
+        }
+
+        [Test]
+        public void TestMethod03()
         {
             int temp = 5;                       
             Log.Info("Division Formula :" + temp / 0);
@@ -36,7 +43,8 @@ namespace NUnitDemo.TestDemo
             else
             {
                 Log.Info("Undefined TestContext.Status = " + TestContext.CurrentContext.Result.Outcome.Status.ToString());
-            }
-        }
+            }            
+        }             
+ 
     }
 }

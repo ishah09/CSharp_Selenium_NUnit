@@ -3,6 +3,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -22,7 +23,12 @@ namespace NUnitDemo.SeleniumCommonTech
             if (scriptRecording.Equals("true"))
             {
                 scj = new ScreenCaptureJob();
-                scj.OutputScreenCaptureFileName = "E:\\" + this.GetType().Name + ".avi";
+                string path = "E:\\" + this.GetType().Name + ".avi";
+                scj.OutputScreenCaptureFileName = path;
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
                 scj.Start();
             }
 

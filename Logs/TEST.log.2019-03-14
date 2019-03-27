@@ -1,0 +1,15 @@
+﻿2019-03-14 18:50:49,170 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - ******Parent******
+2019-03-14 18:50:49,184 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 0
+2019-03-14 18:50:49,186 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 1
+2019-03-14 18:50:49,187 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 1
+2019-03-14 18:50:49,187 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 100
+2019-03-14 18:50:49,187 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - *****Child*******
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 0
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 2
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 1
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 50
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 18:50:46.3178051
+2019-03-14 18:50:49,188 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - 18:50:46.3598062
+2019-03-14 18:50:49,189 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - Per: 150
+2019-03-14 18:50:49,189 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - Fail Test
+2019-03-14 18:50:49,189 INFO [Worker#STA_NP] NUnitDemo.NUnit.stateDemo.TestMethod - Date: 14-03-2019

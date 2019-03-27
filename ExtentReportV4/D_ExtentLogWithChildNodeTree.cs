@@ -2,6 +2,7 @@
 using AventStack.ExtentReports.MarkupUtils;
 using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
+using System;
 
 namespace NUnitDemo.ExtentReportV4
 {
@@ -35,7 +36,7 @@ namespace NUnitDemo.ExtentReportV4
             childLog = testlog.CreateNode("Childnode-3");
             childLog.Info("This is Info log");
             childLog.Pass("This is Pass log");
-            childLog.Warning("This is Warning log");
+            childLog.Warning("This is Warning log");     
 
             extent.Flush();
         }
