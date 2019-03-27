@@ -2,11 +2,13 @@
 using AventStack.ExtentReports.MarkupUtils;
 using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
+using System;
+using System.IO;
 
 namespace NUnitDemo.ExtentReportV4
 {
     [TestFixture]
-    public class V3B_ExtentLogWithTitleDescription
+    public class V3B_ExtentLogWithTitleDescriptionV3B_ExtentLogWithTitleDescription
     {
         [Test]
         public void TestMethod()

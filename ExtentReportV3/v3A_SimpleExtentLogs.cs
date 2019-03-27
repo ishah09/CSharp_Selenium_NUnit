@@ -3,6 +3,8 @@ using AventStack.ExtentReports.MarkupUtils;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
 using NUnit.Framework;
+using System;
+using System.IO;
 
 namespace NUnitDemo.ExtentReportV4
 {
@@ -13,7 +15,7 @@ namespace NUnitDemo.ExtentReportV4
         public void TestMethod()
         {
             //To create report object
-            var htmlReporter = new ExtentV3HtmlReporter("E:\\"+ this.GetType().Name + ".html");
+            var htmlReporter = new ExtentV3HtmlReporter("E:\\" + this.GetType().Name + ".html");
             var extent = new ExtentReports();
             extent.AttachReporter(htmlReporter);
             ExtentTest extentTest;
@@ -30,7 +32,7 @@ namespace NUnitDemo.ExtentReportV4
             htmlReporter.Config.DocumentTitle = "This is Document Title";
 
             //Create simple logs 
-            extentTest = extent.CreateTest("Simple Logs");
+            extentTest = extent.CreateTest("Simple Logs", "<i>This is simple log description.</i>");
             extentTest.Info("This is Info Log");
             extentTest.Pass("This is Pass Log");
             extentTest.Fail("This is Fail Log");
@@ -57,6 +59,40 @@ namespace NUnitDemo.ExtentReportV4
             extentTest.Warning(MarkupHelper.CreateLabel("This is Warning Log", ExtentColor.Lime));
 
             extent.Flush();
+
+            double per = extent.Stats.ParentPercentageFail + extent.Stats.ChildPercentageFail;
+            string testStatus = "";
+
+            if (per > 0)
+                testStatus = "Fail";
+            else
+                testStatus = "Pass";
+
+            string date = DateTime.Now.ToString("dd-MM-yyyy");
+            String result = this.GetType().Name + "\t" + testStatus + "\t" + htmlReporter.StartTime.TimeOfDay + "\t" + htmlReporter.EndTime.TimeOfDay;
+
+            if (!File.Exists("E:/" + date + ".html"))
+            {
+                result = "<table border='1'>"
+                        + "<col width = '600'>" + "<col width = '60'>" + "<col width = '200'>" + "<col width = '200'>"
+                        + "<tr> <td colspan=4> <h1 align = 'center'> Automation Script Test Report for the Day</h1></td></tr>"
+                        + "<tr>"
+                        + "<th align='left'>TestName</th>"
+                        + "<th align='left'>Status</th>"
+                        + "<th align='left'>StartTime</th>"
+                        + "<th align='left'>EndTime</th>"
+                        + "</tr>";
+                File.AppendAllText("E:/" + date + ".html", result + Environment.NewLine);
+            }
+
+            result = "<tr>"
+                    + "<td>" + this.GetType().Name + "</td>"
+                    + "<td>" + testStatus + "</td >"
+                    + "<td>" + htmlReporter.StartTime.TimeOfDay + "</td>"
+                    + "<td>" + htmlReporter.EndTime.TimeOfDay + "</td>"
+                    + "</tr>";
+
+            File.AppendAllText("E:/" + date + ".html", result + Environment.NewLine);
         }
     }
 }

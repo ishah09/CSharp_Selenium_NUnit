@@ -55,7 +55,7 @@ namespace NUnitDemo.ExtentReportV4
             extentTest.Fail(MarkupHelper.CreateLabel("This is Fail Log", ExtentColor.Purple));
             extentTest.Fatal(MarkupHelper.CreateLabel("This is Fatal Log", ExtentColor.Transparent));
             extentTest.Warning(MarkupHelper.CreateLabel("This is Warning Log", ExtentColor.Lime));
-
+                                    
             extent.Flush();
         }
     }
